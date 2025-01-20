@@ -1,0 +1,76 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: hsl(0, 0%, 8%)
+
+    ;
+    font-family: 'Inter', sans-serif;
+}
+
+.profil-main{
+    max-width: 350px;
+    margin: 50px auto;
+    background: hsl(0, 0%, 12%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+} 
+
+.profil-header{
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    align-items: center;
+    margin: 0 0  20px;
+}
+
+.profil-header img{
+    border-radius: 50%;
+    width: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.profil-countries{
+    font-size: 13px;
+    color: hsl(75, 94%, 57%);
+    margin: 8px 0 20px;
+    font-weight: bold;
+}
+
+.profil-job{
+    font-size: 14px;
+    text-align: center;
+}
+
+.profil-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+}
+
+.profil-social{
+    background: hsl(0, 0%, 20%);
+    color: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 320px) {
+    .profil-main{
+        max-width: 300px;
+    } 
+    .profil-content{
+        width: 100%;
+    }
+}
